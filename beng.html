@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .pic
+        {
+            background-image: url("b6.jpg");
+            background-position: center;
+            background-size:cover;
+            width: 100%;
+            height: 500px;
+        }
+        .st1
+        {
+            color: Red;
+            font-size: 50px;
+        }
+        .st2
+        {
+            color:yellow;
+            font-style: italic;
+            font-size: 30px;
+        }
+        .btn1
+        {
+            color:white;
+            background-color: green;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 25px;
+
+        }
+        .btn2
+        {
+            color:white;
+            background-color: red;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 25px;
+        }
+      .button1
+      {
+        background-color: white; 
+        color: black; 
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        border: 2px solid #4CAF50;
+        border-radius: 25px;
+        transform: translateY(300px);
+      }
+      .button1:hover
+      {
+        background-color: #4CAF50;
+        color: white;
+      }
+    </style>
+    <title>Bengali song</title>
+</head>
+<body style="background-color: black;">
+    <div class="pic">
+        <center><h1 style="color: white;font-size: 50px; transform: translateY(260px);">Enjoy all those beautiful songs</h1></center> 
+      <center> <button class="button1" onclick="linkopen()">MY Youtube playlist</button></center> 
+         </div>
+    <audio src="Abar Asibo Phire  Bengali Song  By Lopamudra Mitra  Subho Nababarsha.mp3" id="song1"></audio>
+    <audio src="Sei Raate Raat chilo purnima.mp3" id="song2"></audio>
+    <audio src="Tumi Jake Valobaso  Lyrics Male versionLyrical Video Anupom Roy  Praktan Movie Song 2016.mp3" id="song3"></audio>
+    <audio src="Ami Banglay Gaan Gai -- Jayati Chakraborty.mp3" id="song4"></audio>
+    <audio src="Ami Shunechi Sedin Tumi Lyrics.mp3" id="song5"></audio>
+    <audio src="Keno Barle boyosh chotto belar bondhu hariye jay By Shayan.mp3" id="song6"></audio>
+    <audio src="Gobhire JaoBaishe SrabonRupankar Hit SongProsenjitParambrataAbirRaimaSVF.mp3" id="song7"></audio>
+    <audio src="Ebar Tor Mora Gange _  Rabindra Sangeet _ Srikanta Acharya _  Bhavna Records.mp3" id="song8"></audio>
+    <audio src="Jawl Phoring 2.0 ( _ Prem Tame _ Anupam Roy _ Soumya, Susmita, Sweta _ Anindya _ SVF.mp3" id="song9"></audio>
+    <audio src="Ek Sundori Maiyaa _ Ankur Mahamud Feat Jisan Khan Shuvo _ Bangla New Song 2018 _ Official Video.mp3" id="song10"></audio>
+    <audio src="Nesha _ Arman Alif _ Chondrobindu _ Foisalur Aakash _ Official Music Video _ BanglaNew Song.mp3" id="song11"></audio>
+    <audio src="E TUMI KEMON TUMI Full Song Jaatishwar 2014.mp3" id="song12"></audio>
+    <audio src="Tanmay Kar and Friends ।। Kalo Jole Kuchla Tole।।.mp3" id="song13"></audio>
+    <audio src="Sabai.mp3" id="song14"></audio>
+    <audio src="Nilanjana.mp3" id="song15"></audio>
+    <center><h1 class="st1">----Bengali song----</h1></center>
+    <table style="width: 90%;">
+        <tr>
+            <th class="st2">
+                <u>Song name</u> 
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+                1.Abar Asibo Phire  
+            </th>
+            <th >
+              <button class="btn1" onclick="fun1()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+                2.Sei Raate Raat chilo purnima
+            </th>
+            <th >
+              <button class="btn1" onclick="fun3()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+               3.Tumi Jake Valobaso 
+            </th>
+            <th >
+              <button class="btn1" onclick="fun4()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+               4.Ami Banglay Gaan Gai
+            </th>
+            <th >
+              <button class="btn1" onclick="fun5()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            5.Ami Shunechi Sedin Tumi
+            </th>
+            <th >
+              <button class="btn1" onclick="fun6()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            6.Keno Barle boyosh chotto belar bondhu hariye jay
+            </th>
+            <th >
+              <button class="btn1" onclick="fun7()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            7.Gobhire Jao
+            </th>
+            <th >
+              <button class="btn1" onclick="fun8()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            8.Ebar Tor Mora Gange
+            </th>
+            <th >
+              <button class="btn1" onclick="fun9()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            9.Jawl Phoring 
+            </th>
+            <th >
+              <button class="btn1" onclick="fun10()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            10.Ek Sundori Maiyaa
+            </th>
+            <th >
+              <button class="btn1" onclick="fun11()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            11.Nesha
+            </th>
+            <th >
+              <button class="btn1" onclick="fun12()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            12.E TUMI KEMON TUMI
+            </th>
+            <th >
+              <button class="btn1" onclick="fun13()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            13.Kalo Jole Kuchla Tole
+            </th>
+            <th >
+              <button class="btn1" onclick="fun14()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            14.sobai
+            </th>
+            <th >
+              <button class="btn1" onclick="fun15()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+        <tr>
+            <th class="st2">
+            15.Nilanjana
+            </th>
+            <th >
+              <button class="btn1" onclick="fun16()">Play</button>
+            </th>
+            <th>
+                <button class="btn2" onclick="fun2()">Pause</button>
+            </th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <center><h1 class="st1">Videos</h1></center>
+    <center><iframe width="400px" height="340px" src="https://www.youtube.com/embed/t2VJbINOy8w"></iframe>
+<iframe width="400px" height="340px" src="https://www.youtube.com/embed/JDDus4LZr9Y" style="margin-left: 20px; margin-right: 20px;"></iframe>
+<iframe width="400px" height="340px" src="https://www.youtube.com/embed/0s1V3A-8mmg"></iframe>
+</center>
+<hr>
+<div style="color: white;width: 100%; height: 200px;">
+<p>
+    contact us:
+</p>
+<hr>
+</div>
+    <script>
+        var x=document.getElementById("song1");
+        var x1=document.getElementById("song2");
+        var x2=document.getElementById("song3");
+        var x3=document.getElementById("song4");
+        var x4=document.getElementById("song5");
+        var x5=document.getElementById("song6");
+        var x6=document.getElementById("song7");
+        var x7=document.getElementById("song8");
+        var x8=document.getElementById("song9");
+        var x9=document.getElementById("song10");
+        var x10=document.getElementById("song11");
+        var x11=document.getElementById("song12");
+        var x12=document.getElementById("song13");
+        var x13=document.getElementById("song14");
+        var x14=document.getElementById("song15");
+        function linkopen()
+        {
+            window.open("https://youtube.com/playlist?list=PLHbc2uMb3HaSbDyq3ahF9PR4MFlu2rWly");
+        }
+        function fun1()
+        {
+            x.play();
+        }
+        function fun3()
+        {
+            x1.play();
+        }
+        function fun4()
+        {
+            x2.play();
+        }
+        function fun5()
+        {
+            x3.play();
+        }
+        function fun6()
+        {
+            x4.play();
+        }
+        function fun7()
+        {
+            x5.play();
+        }
+        function fun8()
+        {
+            x6.play();
+        }
+        function fun9()
+        {
+            x7.play();
+        }
+        function fun10()
+        {
+            x8.play();
+        }
+        function fun11()
+        {
+            x9.play();
+        }
+        function fun12()
+        {
+            x10.play();
+        }
+        function fun13()
+        {
+           x11.play(); 
+        }
+        function fun14()
+        {
+            x12.play();
+        }
+        function fun15()
+        {
+            x13.play();
+        }
+        function fun16()
+        {
+            x14.play();
+        }
+        function fun2()
+        {
+            x.pause();
+            x1.pause();
+            x2.pause();
+            x3.pause();
+            x4.pause();
+            x5.pause();
+            x6.pause();
+            x7.pause();
+            x8.pause();
+            x9.pause();
+            x10.pause();
+            x11.pause();
+            x12.pause();
+            x13.pause();
+            x14.pause();
+        }
+    </script>
+</body>
+</html>
